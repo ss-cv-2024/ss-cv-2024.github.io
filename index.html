@@ -5,15 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Резюме</title>
     <style>
-        /* Обеспечиваем, чтобы фрейм занимал 100% экрана */
+        /* Убираем отступы и устанавливаем высоту для html и body */
         html, body {
             margin: 0;
+            padding: 0;
             height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
         }
+
+        /* Стиль для iframe */
         iframe {
-            width: 100%;
+            width: 80%; /* Ширина фрейма будет 80% от ширины экрана */
             height: 100%;
+            max-width: 1000px; /* Ограничиваем максимальную ширину фрейма */
             border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Добавляем легкую тень для визуального эффекта */
         }
     </style>
 </head>
