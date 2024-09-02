@@ -10,23 +10,20 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
+            width: 100%;
+            overflow: hidden;
         }
 
-        /* Стиль для iframe */
+        /* Устанавливаем фрейм на 100% высоты и ширины */
         iframe {
-            width: 80%; /* Ширина фрейма будет 80% от ширины экрана */
+            width: 100%;
             height: 100%;
-            max-width: 1000px; /* Ограничиваем максимальную ширину фрейма */
             border: none;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Добавляем легкую тень для визуального эффекта */
         }
     </style>
 </head>
 <body>
-    <iframe src="Resume.pdf"></iframe>
+    <!-- Вставляем PDF с параметрами масштабирования -->
+    <iframe src="Resume.pdf#zoom=FitH"></iframe>
 </body>
 </html>
